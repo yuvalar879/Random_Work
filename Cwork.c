@@ -4,7 +4,7 @@
  Author      :
  Version     :
  Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Description : String Reverse in C11
  ============================================================================
  */
 
@@ -19,12 +19,15 @@ int main(void) {
 	return 0;
 }
 
-char* reverse(char* a) {
+char* reverse(const char* a) {
 	char* result = malloc(sizeof(a));
 
 	for (int i = strlen(a); i >= 0; i--) {
 		printf("%c", (char) a[i]);
 	}
+
+
+	free(result);
 
 	return 0;
 }
