@@ -10,7 +10,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main(void) {
 
@@ -21,8 +20,6 @@ int main(void) {
 	char* text = malloc(255);
 
 	scanf("%[^\n]%*c", text);
-
-
 
 	for (char* i = text; *i; i++) {
 		if (*i != ' ') {
