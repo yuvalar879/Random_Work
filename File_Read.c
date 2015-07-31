@@ -15,7 +15,13 @@
 
 int main(void) {
 
-	int check = readfunc("D:\\test");
+	char* read = malloc(256);
+
+	puts("Enter Directory: \t no spaces please");
+
+	scanf("%s", read);
+
+	int check = readfunc(read);
 
 	if (check == OK)
 		puts("\nSuccess");
