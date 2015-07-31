@@ -28,6 +28,8 @@ int main(void) {
 	else
 		puts("\nFailure");
 
+	free(read);
+
 	return 0;
 }
 
