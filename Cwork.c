@@ -20,14 +20,18 @@ int main(void) {
 }
 
 char* reverse(const char* a) {
-	char* result = malloc(sizeof(a));
+
+	/* Can also be saved
+	 char* result = malloc(sizeof(a));
+	 */
 
 	for (int i = strlen(a); i >= 0; i--) {
 		printf("%c", (char) a[i]);
 	}
 
-
-	free(result);
+	/*
+	 free(result);
+	 */
 
 	return 0;
 }
