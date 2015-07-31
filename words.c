@@ -22,9 +22,9 @@ int main(void) {
 
 	scanf("%[^\n]%*c", text);
 
-	char* i;
 
-	for (i = text; *i; i++) {
+
+	for (char* i = text; *i; i++) {
 		if (*i != ' ') {
 			words++;
 		}
