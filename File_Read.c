@@ -11,13 +11,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
+#include <windows.h>
 #include "File_Read.h"
 
 int main(void) {
 
 	char* read = malloc(256);
 
-	puts("Enter Directory: \t no spaces please");
+	puts("Enter Directory: ");
 
 	gets(read);
 
@@ -29,6 +30,8 @@ int main(void) {
 		puts("\nFailure");
 
 	free(read);
+	
+	Sleep(5000);
 
 	return 0;
 }

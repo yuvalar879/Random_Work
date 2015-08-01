@@ -32,7 +32,7 @@ int main(void) {
 
 	free(text);
 	
-	Sleep(3000);
+	Sleep(5000);
 
 	return 0;
 }

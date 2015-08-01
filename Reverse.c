@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : Cwork.c
+ Name        : Reverse.c
  Author      :
  Version     :
  Copyright   : Your copyright notice
@@ -11,15 +11,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Cwork.h"
+#include <windows.h>
+#include "Reverse.h"
 
 int main(void) {
-	char* ToReverse = malloc(sizeof(256));
+	char* ToReverse = malloc(sizeof(255));
+	
+	puts("Enter Text: ");
 
 	gets(ToReverse);
 
 	reverse(ToReverse);
-
+	
+	Sleep(5000);
+	
 	free(ToReverse);
 
 	return 0;
