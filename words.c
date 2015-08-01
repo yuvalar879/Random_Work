@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 int main(void) {
 
@@ -19,7 +20,7 @@ int main(void) {
 
 	char* text = malloc(255);
 
-	scanf("%[^\n]%*c", text);
+	gets(text);
 
 	for (char* i = text; *i; i++) {
 		if (*i != ' ') {
@@ -30,6 +31,8 @@ int main(void) {
 	printf("%d", words);
 
 	free(text);
+	
+	Sleep(3000);
 
 	return 0;
 }
