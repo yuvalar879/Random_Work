@@ -29,7 +29,7 @@ for quizNum in range(10):
     countries = list(capitals.keys())
     shuffle(countries)
 
-# loops through the 12 countries and makes a question for each country
+    # loops through the 12 countries and makes a question for each country
 
 
     for questionNum in range(4):
@@ -40,11 +40,11 @@ for quizNum in range(10):
         answerOptions = wrongAnswers + [correctAnswer]
         shuffle(answerOptions)
 
-    # Writing Questions and Answers
+        # Writing Questions and Answers
         quizFile.write('%s. What is the capital %s?\n' % (questionNum + 1, countries[questionNum]))
 
         for i in range(4):
-           quizFile.write('%s. %s\n' % ('ABCD'[i], answerOptions[i]))
+            quizFile.write('%s. %s\n' % ('ABCD'[i], answerOptions[i]))
         quizFile.write('\n')
 
         answerKeyFile.write('%s. %s\n' % (questionNum + 1, 'ABCD'[answerOptions.index(correctAnswer)]))

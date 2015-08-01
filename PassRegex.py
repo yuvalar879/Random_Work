@@ -1,9 +1,10 @@
 __author__ = 'YUVAL'
 
-import re,sys
+import re, sys
+
 
 def main():
-    x=input()
+    x = input()
 
     PassRegex = re.compile(r'^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$')
 
@@ -14,5 +15,6 @@ def main():
         print(m)
     else:
         sys.exit()
+
 
 main()
