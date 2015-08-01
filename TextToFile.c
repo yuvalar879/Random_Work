@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : FileR.c
+ Name        : TextToFile.c
  Author      : Yuval
  Version     :
  Copyright   : 
