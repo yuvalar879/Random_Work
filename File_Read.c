@@ -19,7 +19,7 @@ int main(void) {
 
 	puts("Enter Directory: \t no spaces please");
 
-	scanf("%s", read);
+	gets(read);
 
 	int check = readfunc(read);
 

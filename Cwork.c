@@ -14,7 +14,13 @@
 #include "Cwork.h"
 
 int main(void) {
-	reverse("Hello");
+	char* ToReverse = malloc(sizeof(256));
+
+	gets(ToReverse);
+
+	reverse(ToReverse);
+
+	free(ToReverse);
 
 	return 0;
 }
