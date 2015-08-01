@@ -16,7 +16,7 @@
 
 int main(void) {
 
-	char* read = malloc(256);
+	char* read = malloc(255);
 
 	puts("Enter Directory: ");
 

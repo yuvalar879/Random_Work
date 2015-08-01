@@ -15,7 +15,7 @@
 #include "Reverse.h"
 
 int main(void) {
-	char* ToReverse = malloc(sizeof(255));
+	char* ToReverse = malloc(255);
 	
 	puts("Enter Text: ");
 
