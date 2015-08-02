@@ -42,13 +42,9 @@ int main(int argc, char *argv[]) {
 
 	puts("Socket successfully created\n");
 
-	puts("Please enter IP address: \n");
+	puts("Please enter IP address and Port: \n");
 
-	gets(IP);
-
-	puts("Enter Port:");
-
-	scanf("%d", &Port);
+	scanf("%s %d", IP, &Port);
 
 	/*
 	 * For Testing
@@ -87,6 +83,9 @@ int main(int argc, char *argv[]) {
 
 	closesocket(s);
 	WSACleanup();
+
+	printf("Press Any Key to Continue\n");
+	getch();
 
 	return 0;
 }

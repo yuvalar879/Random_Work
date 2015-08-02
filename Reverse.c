@@ -23,9 +23,12 @@ int main(void) {
 
 	reverse(ToReverse);
 	
-	Sleep(5000);
+	printf("\nPress Any Key to Continue \n");
+	getch();
 	
 	free(ToReverse);
+	
+	
 
 	return 0;
 }

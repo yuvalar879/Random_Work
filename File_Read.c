@@ -31,7 +31,8 @@ int main(void) {
 
 	free(read);
 	
-	Sleep(5000);
+	printf("\nPress Any Key to Continue \n");
+	getch();
 
 	return 0;
 }
